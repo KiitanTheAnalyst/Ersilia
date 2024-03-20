@@ -28,14 +28,24 @@ def standardise_smiles(smiles):
                 st_smi = Chem.MolToSmiles(st_mol)
             except:
 
-# Function to generate InChIKey representation for a given SMILES string
-def generate_inchikey(smiles):
-    mol = Chem.MolFromSmiles(smiles)  # Convert SMILES string to RDKit molecule object
-    if mol is not None:  # Check if molecule object was successfully created
-        inchikey = Chem.inchi.InchiToInchiKey(Chem.inchi.MolToInchi(mol))  # Generate InChIKey
+import pandas as pd
+from rdkit import Chem
+
+def smiles_to_inchikey(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol is not None:
+        inchi = Chem.MolToInchi(mol)
+        inchikey = Chem.InchiToInchiKey(inchi)
         return inchikey
     else:
         return None
+
+# Assuming 'data' is your DataFrame containing the 'smiles' column
+# Replace 'data' with your actual DataFrame name if different
+data['inchikey'] = data['smiles'].apply(smiles_to_inchikey)
+
+# Print the DataFrame with InChIKeys
+print(data[['smiles', 'inchikey']])
 
                 st_smi=np.nan
         else:
