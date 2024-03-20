@@ -27,6 +27,16 @@ def standardise_smiles(smiles):
             try:
                 st_smi = Chem.MolToSmiles(st_mol)
             except:
+
+# Function to generate InChIKey representation for a given SMILES string
+def generate_inchikey(smiles):
+    mol = Chem.MolFromSmiles(smiles)  # Convert SMILES string to RDKit molecule object
+    if mol is not None:  # Check if molecule object was successfully created
+        inchikey = Chem.inchi.InchiToInchiKey(Chem.inchi.MolToInchi(mol))  # Generate InChIKey
+        return inchikey
+    else:
+        return None
+
                 st_smi=np.nan
         else:
             st_smi = np.nan
