@@ -27,6 +27,11 @@ def standardise_smiles(smiles):
             try:
                 st_smi = Chem.MolToSmiles(st_mol)
             except:
+                 st_smi=np.nan
+        else:
+            st_smi = np.nan
+        st_smiles += [st_smi]
+    return st_smiles
 
 import pandas as pd
 from rdkit import Chem
