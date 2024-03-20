@@ -51,9 +51,3 @@ data['inchikey'] = data['smiles'].apply(smiles_to_inchikey)
 
 # Print the DataFrame with InChIKeys
 print(data[['smiles', 'inchikey']])
-
-            st_smi=np.nan
-        else:
-            st_smi = np.nan
-        st_smiles += [st_smi]
-    return st_smiles
