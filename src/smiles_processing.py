@@ -44,10 +44,3 @@ def smiles_to_inchikey(smiles):
         return inchikey
     else:
         return None
-
-# Assuming 'data' is your DataFrame containing the 'smiles' column
-# Replace 'data' with your actual DataFrame name if different
-data['inchikey'] = data['smiles'].apply(smiles_to_inchikey)
-
-# Print the DataFrame with InChIKeys
-print(data[['smiles', 'inchikey']])
