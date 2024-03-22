@@ -39,7 +39,7 @@ This will run our unit tests to ensure that GPU-enabled torch was setup correctl
 
 
 # References
-[Publiication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
+[Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
 
 [Soltrannet](https://github.com/gnina/SolTranNet)
 
