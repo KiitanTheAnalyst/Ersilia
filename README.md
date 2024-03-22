@@ -31,7 +31,7 @@ python3 -m pip install soltrannet
 ```
 NOTE: This installation method often mismatches installation of PyTorch for enabling CUDA if it needs to install PyTorch as a dependency.
 
-3.If you wish to do a more careful installation:
+3. If you wish to do a more careful installation:
 ```
 python3 -m pip install --install-option test soltrannet
 ```
