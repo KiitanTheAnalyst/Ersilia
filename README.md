@@ -37,6 +37,9 @@ This will run our unit tests to ensure that GPU-enabled torch was setup correctl
 
 # References
 [Publiication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
+
 [Soltrannet](https://github.com/gnina/SolTranNet)
+
 [Soltranet Datasets and Figures Generations Repository](https://github.com/francoep/SolTranNet_paper)
+
 [Ersilia Google Colab Guide](https://github.com/ersilia-os/ersilia/blob/master/notebooks/ersilia-on-colab.ipynb)
