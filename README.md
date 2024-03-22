@@ -13,24 +13,24 @@ The repository is organised in folders:
 - 'requirements.txt' lists all the required packages to run the notebooks in this repository.
 
 # Model Characteristics
-Input: Compound
-Input shape: Single
-Task: Regression
-Output: Experimental value
-Output shape: Single (Predicted log of solubility of the compound)
+- Input: Compound
+- Input shape: Single
+- Task: Regression
+- Output: Experimental value
+- Output shape: Single (Predicted log of solubility of the compound)
 
 # Installation Environment
 Getting Started:
 Tested on Ubuntu 18.04.5, Ubuntu 20.04.2, Debian 10, Fedora 33, CentOS 8.3.2011, Windows 10, and Ubuntu 20.04.2 subsystem for Windows 10
 
-First, install RDKit. Installation instructions are available here
+1. First, install RDKit. Installation instructions are available here
 
-After RDKit has finished installing, you can install SolTranNet via pip:
+2. After RDKit has finished installing, you can install SolTranNet via pip:
 
 python3 -m pip install soltrannet
 NOTE: This installation method often mismatches installation of PyTorch for enabling CUDA if it needs to install PyTorch as a dependency.
 
-If you wish to do a more careful installation:
+3. If you wish to do a more careful installation:
 
 python3 -m pip install --install-option test soltrannet
 This will run our unit tests to ensure that GPU-enabled torch was setup correctly, and the proper functioning of SolTranNet as a command line tool and within a python environment.
