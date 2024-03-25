@@ -44,8 +44,7 @@ python3 -m pip install --install-option test soltrannet
 ```
 This will run unit tests to ensure that GPU-enabled torch was setup correctly, and the proper functioning of SolTranNet as a command line tool and within a python environment.
 
-# WEEK 2
-## Task 1 - Model Bias
+# WEEK 2 - Task 1 - Model Bias
 
 ## Step 1 - Model Selection
 Going through the list of models provided , I chose the eos6oli model because I understood the aim and the methodology of the publication.
@@ -74,11 +73,13 @@ I calculated the logarithm of solubility (base 10), and the result generated sho
 ## Step 7 - Conclusion
 Comparing the model information with predictions generated, it can be inferred that the model is not biased from the results generated . The model was able effectively screen out 998 compounds that has low solubility with Log S of -10 and inability to obtain 100 μM solution. Only 2 compounds has Log S values > -4 and are able to obtain 100 μM solution.
 
-# Task 2 - Model Reproducibility
-## Step 1 - Installation of Model
 
-## I installed rdkit which is a requirement before installing the soltrannet model in my notebook
+# WEEK 2 - Task 2 - Model Reproducibility
+
+## Step 1 - Installation of Model
+I installed rdkit which is a requirement before installing the soltrannet model in my notebook
 `!pip install rdkit`
+
 `!pip install soltrannet`
 
 ## Step 2 - Selecting Result to Reproduce
@@ -93,6 +94,8 @@ I also went ahead to use a more categorized datasets also found on the soltranne
 
 ## Step 5 - Reproducibility in Ersilia Model Hub
 Using the same SC2 dataset, in Section 2 of Model Reproducibility, I generated predictions using Ersilia model , saved the result and compared the results with Author's. I recreated an histogram and 2 plots for false discovery rates where the Insoluble LogS <= -5 and <=-6 . The results generated using Ersilia Model and the author's model was exactly the same which signifies Reproducibility.
+
+## WEEK 2 - Task 3 - External Validation
 
 # References
 [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
