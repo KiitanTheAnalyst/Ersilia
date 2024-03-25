@@ -1,8 +1,13 @@
 # Model-Validation - eos6oli
 
-# Model Abstract
+# Aqueous solubility prediction
+Fast aqueous solubility prediction based on the Molecule Attention Transformer (MAT). The authors used AqSolDB to fine-tune the MAT network to solubility prediction, achieving competitive scores in the Second Challenge to Predict Aqueous Solubility (SC2).
 This repository contains all codes and datasets used for the validation of eos6oli model. This is the selected model used for predictions in the Model Bias and Reproducibility for the Outreachy contributors 2024. 
 This model focuses on implementation of the SolTranNet tool utilizing the molecular transformer to predict aqueous solubility of compounds, an important property for drug discovery using a molecule's SMILES representation as input.
+
+## Identifiers
+* EOS model ID: `eos6oli`
+* Slug: `soltrannet-aqueous-solubility`
 
 # Repository organisation
 The repository is organised in folders:
@@ -11,6 +16,7 @@ The repository is organised in folders:
 - '/notebooks' contains the jupyter notebooks where predictions were made
 - '/src' contains important functions I will use throughout the repository, to avoid typing them each time
 - 'requirements.txt' lists all the required packages to run the notebooks in this repository.
+- 'Interpretation: Predicted LogS (log of the solubility)
 
 # Model Characteristics
 - Input: Compound
@@ -35,8 +41,7 @@ NOTE: This installation method often mismatches installation of PyTorch for enab
 ```
 python3 -m pip install --install-option test soltrannet
 ```
-This will run our unit tests to ensure that GPU-enabled torch was setup correctly, and the proper functioning of SolTranNet as a command line tool and within a python environment.
-
+This will run unit tests to ensure that GPU-enabled torch was setup correctly, and the proper functioning of SolTranNet as a command line tool and within a python environment.
 
 # References
 [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
@@ -46,3 +51,8 @@ This will run our unit tests to ensure that GPU-enabled torch was setup correctl
 [Soltranet Datasets and Figures Generations Repository](https://github.com/francoep/SolTranNet_paper)
 
 [Ersilia Google Colab Guide](https://github.com/ersilia-os/ersilia/blob/master/notebooks/ersilia-on-colab.ipynb)
+
+## Citation
+[original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331
+[Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+
