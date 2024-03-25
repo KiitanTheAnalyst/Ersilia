@@ -5,7 +5,7 @@ Fast aqueous solubility prediction based on the Molecule Attention Transformer (
 This repository contains all codes and datasets used for the validation of eos6oli model. This is the selected model used for predictions in the Model Bias and Reproducibility for the Outreachy contributors 2024. 
 This model focuses on implementation of the SolTranNet tool utilizing the molecular transformer to predict aqueous solubility of compounds, an important property for drug discovery using a molecule's SMILES representation as input.
 
-## Identifiers
+# Identifiers
 * EOS model ID: `eos6oli`
 * Slug: `soltrannet-aqueous-solubility`
 
@@ -52,7 +52,8 @@ This will run unit tests to ensure that GPU-enabled torch was setup correctly, a
 
 [Ersilia Google Colab Guide](https://github.com/ersilia-os/ersilia/blob/master/notebooks/ersilia-on-colab.ipynb)
 
-## Citation
+# Citation
 [original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331
+
 [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
