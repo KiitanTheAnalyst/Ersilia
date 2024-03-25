@@ -97,6 +97,18 @@ Using the same SC2 dataset, in Section 2 of Model Reproducibility, I generated p
 
 ## WEEK 2 - Task 3 - External Validation
 
+# Step 1 - Sourcing for Dataset with Sufficient Experimental Result
+After a short literature review, i found this [publication](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00121/full#SM1) with datasets on molecules and their experimentally determined solubility. I downloaded one for my use to be the external dataset in my validation process. I also downloaded the training dataset for the soltranet model and compared the SMILES with the ones in my external dataset to be sure there is no data leakage.
+
+# Step 2 - Cleaning and Standarizing
+Out of 9955 SMILES in my external data, I found 368 SMILES to be already a part of the training datasets and deleted them from my external datasets. I checked and confirmed that the SMILES were stanadardised and proceeded to save the processed dataset. 
+
+# Step 3 - Ran Predictions and Calculated Metrics
+I made predictions on the training dataset using the eos6oli model and saved the output. Then,I matched the ouput with the external dataset to get the experimental values and saved it as csv file. To validate the model, I calculated the R2 score (coefficient of determination) and the score is 0.51 suggesting that the model was able to capture a significant portion of the variation in experimental solubility.
+
+# Step 4 - PCA of Morgan Fingerprint
+I created a PCA plot of the training and external vaildation set using morgan fingerprints and the two sets of data overlap, explaining how the model is able to generalize and perform well even on the external dataset.
+
 # References
 [Publication](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
 
