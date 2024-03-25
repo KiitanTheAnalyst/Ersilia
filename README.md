@@ -16,14 +16,15 @@ The repository is organised in folders:
 - '/notebooks' contains the jupyter notebooks where predictions were made
 - '/src' contains important functions I will use throughout the repository, to avoid typing them each time
 - 'requirements.txt' lists all the required packages to run the notebooks in this repository.
-- 'Interpretation: Predicted LogS (log of the solubility)
 
 # Model Characteristics
 - Input: Compound
 - Input shape: Single
 - Task: Regression
 - Output: Experimental value
-- Output shape: Single (Predicted log of solubility of the compound)
+- Output Type: `Float`
+- Output shape: `Single`
+- Interpretation: (Predicted log of solubility of the compound)
 
 # Installation Process
 Getting Started:
