@@ -54,7 +54,7 @@ This will run unit tests to ensure that GPU-enabled torch was setup correctly, a
 [Ersilia Google Colab Guide](https://github.com/ersilia-os/ersilia/blob/master/notebooks/ersilia-on-colab.ipynb)
 
 # Citation
-[original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
+[Original authors](https://pubs.acs.org/doi/10.1021/acs.jcim.1c00331)
 
 [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
